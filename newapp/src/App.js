@@ -1,10 +1,4 @@
-
-import './App.css';
-
-import twins from "./assets/img/twins.JPG"
-import ricardo from "./assets/img/ricardo.png.jpg"
-
-const dados = [
+const pessoas = [
   {
     nome: 'Ana Silva',
     idade: 28,
@@ -77,22 +71,27 @@ const dados = [
   },
 ];
 
+const nomeDoBotao = 'CLIQUE NESSE BOTAOZINHO AQUI';
 
-//CRIAR UM OU MAIS COMPONENTES PARA LISTAR O QUE TEM EM DADOS
+const numeroAleatorio = Math.random();
+
+//NAO FAZER NENHUM CSS POR ENQUANTO!!!
+//PROIBIDO USAR IA(CHATGPT OU SEILA O QUE)
+
+//1- CRIAR UM COMPONENTE CHAMADO CARD QUE LISTA AS PESSOAS
+
+//2- CRIAR UM COMPONENTE BOTAOZINHO QUE RECEBE UM A VARIAVEL NOMEDOBOTAO COMO TITULO DO BOTAO
+
+//3- CRIAR UM COMPONENTE CHAMADO NUMEROALEATORIO, QUE RECEBE A VARIAVEL NUMEROALEATORIO
+
+//4- TAREFA BONUS - CHAMAR O BOTAO DENTRO DO COMPONENTE CARD
+
+//LISTAR OS 3 COMPONENTES EM APP
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Gustavo e Augusto</h1>
-      <p>Bad boys</p>
-      <p>Casa da vó Wanda e vô Eduardo</p>
-      <img class="img" src={twins} title="guris da catequese" />
-      <h1>Ricardo</h1>
-      <p>30 anos</p>
-      <p>Rua Odorico Mosmann - Centro</p>
-      <img class="img" src={ricardo} />
-    </div>
-  );
+  return <div></div>;
+
+  
 }
 
 export default App;
