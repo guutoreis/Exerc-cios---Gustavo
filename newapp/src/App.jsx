@@ -1,3 +1,7 @@
+import Botaozinho from "./Components/Botao/Botaozinho";
+import Card from "./Components/Card/Card";
+import NumeroAleatorio from "./Components/Numero/NumeroAleatorio";
+
 const pessoas = [
   {
     nome: 'Ana Silva',
@@ -78,20 +82,27 @@ const numeroAleatorio = Math.random();
 //NAO FAZER NENHUM CSS POR ENQUANTO!!!
 //PROIBIDO USAR IA(CHATGPT OU SEILA O QUE)
 
-//1- CRIAR UM COMPONENTE CHAMADO CARD QUE LISTA AS PESSOAS
+//1- CRIAR UM COMPONENTE CHAMADO CARD QUE LISTA AS PESSOAS - OK
 
-//2- CRIAR UM COMPONENTE BOTAOZINHO QUE RECEBE UM A VARIAVEL NOMEDOBOTAO COMO TITULO DO BOTAO
+//2- CRIAR UM COMPONENTE BOTAOZINHO QUE RECEBE UMA VARIAVEL NOMEDOBOTAO COMO TITULO DO BOTAO - OK
 
 //3- CRIAR UM COMPONENTE CHAMADO NUMEROALEATORIO, QUE RECEBE A VARIAVEL NUMEROALEATORIO
 
-//4- TAREFA BONUS - CHAMAR O BOTAO DENTRO DO COMPONENTE CARD
+//4- TAREFA BONUS - CHAMAR O BOTAO DENTRO DO COMPONENTE CARD 
 
 //LISTAR OS 3 COMPONENTES EM APP
 
 function App() {
-  return <div></div>;
 
-  
+  return (
+
+    <div>
+      <Card dados = {pessoas} botao = {nomeDoBotao}/>
+      <Botaozinho botao = {nomeDoBotao} />
+      <NumeroAleatorio numero = {numeroAleatorio} />
+    </div>
+
+  )
 }
 
 export default App;
