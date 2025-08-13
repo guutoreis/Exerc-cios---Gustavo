@@ -101,7 +101,7 @@ function App() {
     <NumeroAleatorio numero = {numeroAleatorio}/>
   </div>
 
-  
+  //reenviando
 
   )
 }
